@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuscripcionActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Formulario de Suscripción"
+            android:textSize="30sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:text="Nombre:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/txtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su nombre.."/>
+
+        <TextView
+            android:text="Correo electrónico:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su email.."/>
+
+        <TextView
+            android:text="Tipo Socio:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <RadioButton
+                android:id="@+id/rdbbasico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="Básico"/>
+
+            <RadioButton
+                android:id="@+id/rdbpremium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Premium"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:text="Preferencias:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/chkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="@color/black"
+            android:text="Paseos"
+            />
+
+        <CheckBox
+            android:id="@+id/chkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="@color/black"
+            android:text="Viajes"
+            />
+
+        <CheckBox
+            android:id="@+id/chkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="@color/black"
+            android:text="Explorar"
+            />
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar Formulario"
+            android:layout_marginTop="25dp"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
